@@ -1,0 +1,7 @@
+Extra/
+images/
+textFonts/
+build/
+__pycache__/
+network.py
+server.py

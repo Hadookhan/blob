@@ -17,7 +17,7 @@ class Items:
         self.image = image
 
     def get_Item(self):
-        image1 = pygame.image.load(f"{dir}\images\\{self.image}").convert_alpha()
+        image1 = pygame.image.load(rf"{dir}\images\{self.image}").convert_alpha()
         item = pygame.transform.smoothscale(image1,(self.width,self.height))
         
         return item
@@ -35,14 +35,14 @@ class ExplosionBomb:
         self.image = image
 
     def get_ExplosionBomb(self):
-        self.image = f'{dir}\images\{"ExplosionBomb.png"}'
+        self.image = rf'{dir}\images\{"ExplosionBomb.png"}'
         image1 = pygame.image.load(f'{self.image}').convert_alpha()
         bomb = pygame.transform.smoothscale(image1,(self.width,self.height))
 
         return bomb
     
     def get_explosion(self, width, height):
-        self.image = f'{dir}\images\{"Explosion.png"}'
+        self.image = rf'{dir}\images\{"Explosion.png"}'
         image1 = pygame.image.load(f'{self.image}').convert_alpha()
         explosion = pygame.transform.smoothscale(image1,(width,height))
 
